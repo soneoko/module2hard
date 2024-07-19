@@ -4,7 +4,8 @@ for i in range(3, 21):
         for k in range(1, i):
             if i % (j + k) == 0:
                 if str(k) not in x:
-                    x = x + str(j) + str(k)
+                    if j != k:
+                        x = x + str(j) + str(k)
 
 
 
